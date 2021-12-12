@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <title>COVID19</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  *{
+    font-family: 'Noto Sans KR', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    border-collapse: collapse;
+    margin:0px;
+    padding:0px;
+    color:black;
+}
+
+h1 {
+    font-size:48px;
+    font-weight: 100;
+}
+h4 {
+    font-size:20px;
+    font-weight: lighter;
+}
+
+.intro_bg{
+    background-image:url("https://cdn.pixabay.com/photo/2020/03/09/19/38/corona-4916954_960_720.jpg");
+    background-size:cover;
+    height:618px;
+    background-repeat:no-repeat;
+}
+
+.header{
+    display:flex;
+    width:1280px;
+    margin:auto;
+    height:86px;
+}
+.searchArea{
+    width:300px;
+    height:40px;
+    background: rgba(0,0,0,0.5);
+    border-radius: 5px;
+    margin-top:24px;
+}
+.searchArea > form > input {
+    border:none;
+    width:250px;
+    height:40px;
+    background:rgba(0,0,0,0.0);
+    color:#fff;
+    padding-left:10px
+}
+.searchArea > form > span{
+    width:50px;
+    color:#fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+.nav{
+    display:flex;
+    justify-content: flex-end;
+    line-height: 86px;
+    width:calc(1280px - 300px);
+}
+.nav > li{
+    margin-left:84px;
+}
+.nav > li > a{
+    color:black;
+}
+.nav > li > a:hover{
+    color: darkorange; /*마우스 올라갈 때 색*/
+}
+
+.amount{
+    position: relative;
+    top:-66;
+    display: flex;
+    width:1280px;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    margin: auto;
+}
+.amount > li {
+    flex: 1;
+    height: 132px;
+}
+.amount > li > div {
+    text-align: center;
+    margin-top:37px;
+    height: 57px;
+}
+
+.amount > li:not(:last-child) > div{
+    border-right:1px solid gray;
+}
+.intro_text{
+    width:100%;
+    margin:231px auto 231px ;
+    text-align: center;
+}
+.intro_text > h1,
+.intro_text > h4{
+ color:black;
+}
+  <body>
+    <div class="wrap">
+      <div class="intro_bg">
+        <div class="header">
+          <div class="searchArea">
+            <form>
+              <input type="search" placeholder="search">
+              <span>검색</span>
+            </form>
+          </div>
+          <ul class="nav">
+            <li><a href="http://ncov.mohw.go.kr/bdBoardList_Real.do?brdId=1&brdGubun=11&ncvContSeq=&contSeq=&board_id=&gubun=">발생동향</a></li>
+            <li><a href="http://ncov.mohw.go.kr/baroView.do?brdId=4&brdGubun=41">코로나 19란?</a></li>
+            <li><a href="http://ncov.mohw.go.kr/guidelineList.do?brdId=7&brdGubun=71">생활 속 거리두기</a></li>
+            <li><a href="http://ncov.mohw.go.kr/duBoardList.do?brdId=2&brdGubun=28">관련기관별 대응지침</a></li>
+          </ul>
+        </div>
+        <div class="intro_text">
+          <h1>코로나바이러스감염증-19(COVID-19)</h1>
+          <h4 class="contents1">코로나 바이러스(COV)는 사람과 다양한 동물에 감염될 수 있는 바이러스로서 유전자  크기 27~32KB의 RNA 바이러스</h4>
+        </div>
+      </div>
+      </div>
+      <!-- intro end-->
+      <ul class="amount">
+          <li>
+              <div>
+                  <div>누적 확진 환자</div>
+                  <div>517,271</div>
+              </div>
+          </li>
+          <li>
+            <div>
+                <div>일일 확진자</div>
+                <div>6,689</div>
+            </div>
+        </li>
+        <li>
+            <div>
+                <div>1차 접종</div>
+                <div>83.7%</div>
+            </div>
+        </li>
+        <li>
+            <div>
+                <div>접종 완료</div>
+                <div>81.2%</div>
+            </div>
+        </li>
+        </ul>
+      </div>
+     </body>
+ </html>
